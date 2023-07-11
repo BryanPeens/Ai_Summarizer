@@ -84,9 +84,9 @@ const Demo = () => {
           />
           <button
             type='submit'
-            className='submit_btn peer-focus:border-gray-700 peer-focus:text-gray-700 '
+            className='submit_btn peer-focus:border-gray-700 peer-focus:text-gray-700'
           >
-            <p>↵</p>
+            <p className="text-blue-400">↵</p>
           </button>
         </form>
 

@@ -1,31 +1,31 @@
 import React from "react";
-
-import { logo } from "../assets";
+import { sun } from "../assets";
 
 const Hero = () => {
   return (
-    <header className='w-full flex justify-center items-center flex-col'>
-      <nav className='flex justify-between items-center w-full mb-10 pt-3'>
-        <img src={logo} alt='sumz_logo' className='w-28 object-contain' />
+    <header className="w-full flex flex-col items-center justify-center">
+      <nav className="flex justify-between items-center w-full mb-10 pt-3">
+        <img src={sun} alt="sunz_logo" className="w-28 object-contain" />
 
         <button
-          type='button'
+          type="button"
           onClick={() =>
             window.open("https://github.com/BryanPeens", "_blank")
           }
-          className='black_btn'
+          className="bg-black text-white py-2 px-4 rounded-lg shadow-md"
         >
           GitHub
         </button>
       </nav>
 
-      <h1 className='head_text'>
-        Summarize Articles with <br className='max-md:hidden' />
-        <span className='orange_gradient '>OpenAI GPT-4</span>
+      <h1 className="text-4xl text-center mb-4">
+        Efficient Article Summarization Leveraging{" "}
+        <br className="max-md:hidden" />
+        <span className="text-orange-500">OpenAI GPT-4</span>
       </h1>
-      <h2 className='desc'>
-        Simplify your reading with Summize, an open-source article summarizer
-        that transforms lengthy articles into clear and concise summaries
+      <h2 className="text-lg text-center">
+        Simplify your reading with ArticleSynth, an open-source article summarizer
+        that transforms lengthy articles into clear and concise summaries.
       </h2>
     </header>
   );
